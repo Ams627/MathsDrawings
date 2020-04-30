@@ -9,6 +9,11 @@
 </head>
 <body>
 <svg viewbox="-50,-10,1000,1000" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    path {
+      marker: url(#diamond);
+    }
+  </style>
   <path fill="none" stroke="black" stroke-width="4" d="M 0,400 l 400,0 l -200,-346.41016 z"/>
 
   <text x="-20" y="420" fill="black">A</text>
@@ -28,6 +33,12 @@
   <path fill="none" stroke="gray"  d="M 200,420 l0,-386.41016"/>
   <path fill="none" stroke="gray"  d="M 0,400 m100,-173.205080756 L400,400"/>
   <path fill="none" stroke="gray"  d="M 0,400 l300,-173.205080756"/>
+  
+  <marker id="diamond" markerWidth="12" markerHeight="12" refX="6" refY="6"
+          markerUnits="userSpaceOnUse">
+    <circle cx="6" cy="6" r="6"
+            fill="black" stroke="context-stroke" stroke-width="2"/>
+  </marker>
   
 </svg>
 </body>
