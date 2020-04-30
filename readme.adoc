@@ -1,0 +1,7 @@
+= Maths drawings
+
+== Equilateral Triangle
+
+== Equilateral Triangle Showing Centroid
+
+image::equilateral-centroid.svg[]
