@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Nothing</title>
+<style type='text/css'>
+</style>
+<script>
+</script>
+</head>
+<body>
+<p class="text">A equilateral triangle ABC (as shown below) has sides of length <i>a</i>.
+The distance BO is <i>R</i> and the distance OB is <i>r</i></p>
+<ol>
+<li>What is the angle α?</li>
+<li>What is the angle β?</li>
+<li>What is the distance BG in terms of <i>a</i>?</li>
+<li>What is the distance <i>r</i> in terms of <i>a</i>?</li>
+<li>How tall is tetrahedron made of four of these triangles (in terms of a)?</li>
+</ol>
+
+<svg viewbox="-50,-10,480,480" xmlns="http://www.w3.org/2000/svg height="800", width="800">
+  <style>
+    .triangle {
+      marker: url(#diamond);
+    }
+    .bisector {
+    stroke-dasharray:4;
+    stroke:black;
+    }
+    .rightangle {
+        stroke:black
+    }
+    line { stroke: #aaa; }
+   </style>
+  <defs>
+    <pattern id="diagonalHatch" width="10" height="10" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+        <line x1="5" y1="0" x2="5" y2="10" />
+        <line x1="0" y1="5" x2="10" y2="5" />
+    </pattern>
+  </defs>
+  <circle class="cirle" fill="none" stroke="black" stroke-width="4" cx="200", cy="200" r="200"/>
+  <circle class="cirle" fill="black" stroke="black" stroke-width="4" cx="200", cy="200" r="2"/>
+  
+  <path class="radius" fill="black" stroke="black" d="M 200,200 l200,0 a4,4,0,1,0,4,0 a2,2,0,1,0,-4,0"/>
+  
+  
+  <path class="radius" fill="none" stroke="black" d="M 200,200 l-200,0"/>
+  <path class="chord" fill="none" stroke="black" d="M 200,200 m0,-100 l-172,0 m172,0 l172,0"/>
+  
+  <path class="filler" fill="url(#diagonalHatch)" stroke="none" d="M200,200 m172,-100 a200,200,0,0,0,-344,0" />
+  
+  <text x="10" y="100" fill="black">A</text>  
+  <text x="378" y="100" fill="black">B</text>  
+  <text x="205" y="195" fill="black">O</text>  
+  <text x="410" y="205" fill="black">P</text>  
+  <text x="300" y="195" fill="black">r</text>
+
+  </svg>
+  
+</body>
+</html>
